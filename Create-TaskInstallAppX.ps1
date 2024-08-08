@@ -1,4 +1,5 @@
 #Script Create-TaskInstallAppX.ps1
+#The script was created to install Satispay. Please modify it accordingly.
 
 #Preparazione della cartella per lo script e copia del file
 If (!(Test-Path -Path C:\Scripts))
