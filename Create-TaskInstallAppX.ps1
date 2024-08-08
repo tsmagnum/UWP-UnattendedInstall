@@ -9,7 +9,7 @@ If (!(Test-Path -Path C:\Scripts))
 
 New-PSDrive -Name S -PSProvider FileSystem -Root "\\server\folder\Satispay" -Credential $using:creds
 
-Copy-Item -Path "S:\Install-SatispayAppX.ps1" -Destination C:\Scripts -Force
+Copy-Item -Path "S:\Install-AppX.ps1" -Destination C:\Scripts -Force
 
 #Selezione dell'utente loggato in console per l'esecuzione del task
 $user = (Get-CimInstance -ClassName Win32_ComputerSystem | Select-Object username).username
